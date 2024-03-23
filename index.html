@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!------------------------------ FAVICON ------------------------------>
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+
+    <!------------------------ GOOGLE FONT'S LINKS ------------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!---------------------------- REMIXICONS ----------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" crossorigin="">
+
+    <!------------------------------ STYLES ------------------------------->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Invest</title>
+</head>
+<body>
+
+
+
+    <!---------------------------- HEADER --------------------------------->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/images/index.png" alt="index" class="nav__img">
+                <p class="nav__logo-name">in<span>vest.</span></p>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <span class="nav__title">Menu</span>    
+
+                <h3 class="nav__name">Invest</h3>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">Overview</a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#news" class="nav__link">News</a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link nav__link-button">Contact Us</a>
+                    </li>
+                </ul>
+
+                <!------CLOSE BUTTON----->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+
+                <!------THEME BUTTON----->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <!----------- TOGGLE BUTTON----------->
+                <div class="nav__toogle" id="nav-toogle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>  
+        </nav>
+    </header>
+
+
+    <!----------------------------- MAIN -------------------------------->
+    <main class="main">
+
+        <!--======================= HOME ============================--->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <h1 class="home__name">
+                    Keep on <span>business</span>,<br> keep on <span>invest</span>.
+                </h1>
+
+
+                <div class="home__perfil">
+                    <div class="home__image">
+                        <!--<img src="images/Imagen3.png" alt="image" class="home__img"> -->
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                            {
+                            "colorTheme": "dark",
+                            "dateRange": "1D",
+                            "showChart": true,
+                            "locale": "en",
+                            "width": "300",
+                            "height": "550",
+                            "largeChartUrl": "",
+                            "isTransparent": false,
+                            "showSymbolLogo": true,
+                            "showFloatingTooltip": true,
+                            "plotLineColorGrowing": "rgba(0, 255, 0, 1)",
+                            "plotLineColorFalling": "rgba(255, 0, 0, 1)",
+                            "gridLineColor": "rgba(240, 243, 250, 0)",
+                            "scaleFontColor": "rgba(106, 109, 120, 1)",
+                            "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                            "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                            "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                            "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                            "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+                            "tabs": [
+                            {
+                                "title": "Forex",
+                                "symbols": [
+                                {
+                                    "s": "FX:EURUSD",
+                                    "d": "EUR to USD"
+                                },
+                                {
+                                    "s": "FX:GBPUSD",
+                                    "d": "GBP to USD"
+                                },
+                                {
+                                    "s": "FX:USDJPY",
+                                    "d": "USD to JPY"
+                                },
+                                {
+                                    "s": "FX:USDCHF",
+                                    "d": "USD to CHF"
+                                },
+                                {
+                                    "s": "FX:AUDUSD",
+                                    "d": "AUD to USD"
+                                },
+                                {
+                                    "s": "FX:USDCAD",
+                                    "d": "USD to CAD"
+                                }
+                                ],
+                                "originalTitle": "Forex"
+                            },
+                            {
+                                "title": "Crypto",
+                                "symbols": [
+                                {
+                                    "s": "BITSTAMP:BTCUSD",
+                                    "d": "Bitcoin"
+                                },
+                                {
+                                    "s": "BINANCE:SOLUSDT",
+                                    "d": "Sol Tetherus"
+                                },
+                                {
+                                    "s": "BINANCE:ETHUSDT",
+                                    "d": "Ethereum"
+                                },
+                                {
+                                    "s": "COINBASE:ETHUSD",
+                                    "d": "Ether"
+                                },
+                                {
+                                    "s": "BINANCE:XRPUSDT",
+                                    "d": "XRP"
+                                },
+                                {
+                                    "s": "BINANCE:ADAUSDT",
+                                    "d": "Cardano"
+                                }
+                                ]
+                            },
+                            {
+                                "title": "Stocks",
+                                "symbols": [
+                                {
+                                    "s": "NASDAQ:TSLA",
+                                    "d": "TESLA "
+                                },
+                                {
+                                    "s": "NASDAQ:NVDA",
+                                    "d": "NVIDIA"
+                                },
+                                {
+                                    "s": "NASDAQ:AAPL",
+                                    "d": "APPLE"
+                                },
+                                {
+                                    "s": "NASDAQ:MSFT",
+                                    "d": "MICROSOFT"
+                                },
+                                {
+                                    "s": "NASDAQ:META",
+                                    "d": "META"
+                                },
+                                {
+                                    "s": "NASDAQ:GOOGL",
+                                    "d": "GOOGLE"
+                                }
+                                ]
+                            }
+                            ]
+                        }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+
+                        <div class="home__shadow"></div>
+
+                        <!--<img src="images/curved-arrow.svg" alt="" class="home__arrow">
+                        <img src="images/random-lines.svg" alt="" class="home__line">
+
+                        <div class="geometric-box"></div>-->
+                    </div>
+
+                    <div class="home__social"> <!--Contenedor para botones de sm-->
+                        <a href="https://instagram.com" target="_blank" class="home__social-link"><!--Contenedor para insertar links-->
+                            <i class="ri-instagram-line"></i><!--Contenedor para ícono. (INSTAGRAM)-->
+                        </a>
+                        <a href="https://linked.in" target="_blank" class="home__social-link">
+                            <i class="ri-linkedin-box-line"></i><!--Contenedor para ícono. (LINKEDIN)-->
+                        </a>
+                        <a href="https://github.com/jayjanick/Invest" target="_blank" class="home__social-link">
+                            <i class="ri-github-line"></i><!--Contenedor para ícono. (GITHUB)-->
+                        </a>
+                    </div><!--Cierre del contenedor-->
+                </div>
+
+                <div class="home__info">
+                    <p class="home__description">
+                        <b>Embrace the power of investing.</b> Proven returns, 
+                        elite advice and cutting-edge tools. Challenge limits, 
+                        invest with determination. 
+                    </p>
+
+                    <a href="#blog" class="home__scroll">
+                        <div class="home__scroll-box">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+
+                        <span class="home__scroll-text">Scroll Down</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--==================== TOP STOCKS ====================-->
+        <section class="blog" id="blog">
+           <div class="blog-heading">
+                <h3>Top Market<span><br>OVERVIEW</span></h3>
+           </div>
+
+           <div class="blog-container">
+
+                <div class="blog-box">
+                    <div class="box-title">
+                        BITCOIN
+                    </div>
+
+                    <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                            {
+                                "symbol": "BITSTAMP:BTCUSD",
+                                "width": "100%",
+                                "height": "100%",
+                                "locale": "en",
+                                "dateRange": "12M",
+                                "colorTheme": "dark",
+                                "isTransparent": true,
+                                "autosize": true,
+                                "largeChartUrl": ""
+                            }
+                            </script>
+                        </div>
+                    <!-- TradingView Widget END -->
+                </div>
+
+                <div class="blog-box">
+
+                    <div class="box-title">
+                        APPLE
+                    </div>
+
+                    <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                            {
+                                "symbol": "NASDAQ:AAPL",
+                                "width": "100%",
+                                "height": "100%",
+                                "locale": "en",
+                                "dateRange": "1D",
+                                "colorTheme": "dark",
+                                "isTransparent": true,
+                                "autosize": false,
+                                "largeChartUrl": ""
+                            }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                </div>
+
+                <div class="blog-box">
+
+                    <div class="box-title">
+                        TESLA
+                    </div>
+                    
+                    <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                            {
+                                "symbol": "NASDAQ:TSLA",
+                                "width": "100%",
+                                "height": "100%",
+                                "locale": "en",
+                                "dateRange": "1D",
+                                "colorTheme": "dark",
+                                "isTransparent": true,
+                                "autosize": true,
+                                "largeChartUrl": ""
+                            }
+                            </script>
+                        </div>
+                    <!-- TradingView Widget END -->
+                </div>
+
+            </div>
+        </section>
+
+
+ 
+        <!--==================== NEWS ====================-->
+        <section class="projects section" id="news">
+           <h2 class="section__title-1">
+                Overflow<br><span>NEWS</span>
+           </h2>
+
+           <div class="projects__container container grid">
+        
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img src="assets/images/featured post/post1.jpeg" alt="image" class="projects__img">
+
+                    <!--<a href="#" class="projects__button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>-->
+                </div>
+
+                <div class="project__content">
+                    <h3 class="projects__subtitle">EUR/USD</h3>
+                    <h2 class="projects__title">EUR/USD: Euro Pulls Back as Dollar Bulls Step Up Bets
+                    </h2>
+
+                    <p class="projects__description">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit.
+                    </p>
+                </div>
+
+                <div class="projects__buttons">
+                    <a href="https://www.tradingview.com/news/tradingview:95c781160094b:0-eur-usd-euro-pulls-back-as-dollar-bulls-step-up-bets-ahead-of-december-s-jobs-report/" target="_blank" class="projects__link">
+                        <i class="ri-link"></i>View
+                    </a>
+                </div>
+            </article>
+
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img src="assets/images/featured post/post2.jpeg" alt="image" class="projects__img">
+
+                    <!--<a href="#" class="projects__button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>-->
+                </div>
+
+                <div class="project__content">
+                    <h3 class="projects__subtitle">DXY</h3>
+                    <h2 class="projects__title">DXY: Dollar Index Wobbles Near 102.00                    </h2>
+
+                    <p class="projects__description">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit.
+                    </p>
+                </div>
+
+                <div class="projects__buttons">
+                    <a href="https://www.tradingview.com/news/tradingview:63990a42b094b:0-dxy-dollar-index-wobbles-near-102-00-as-fx-deals-consolidate-ahead-of-fed-minutes/" target="_blank" class="projects__link">
+                        <i class="ri-link"></i> View
+                    </a>
+                </div>
+            </article>
+
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img src="assets/images/featured post/post3.jpeg" alt="image" class="projects__img">
+
+                   <!--<a href="#" class="projects__button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>-->
+                </div>
+
+                <div class="project__content">
+                    <h3 class="projects__subtitle">SPX</h3>
+                    <h2 class="projects__title">SPX: S&P 500 Extends Weak Start of Year with 0.8% Loss</h2>
+
+                    <p class="projects__description">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit.
+                    </p>
+                </div>
+
+                <div class="projects__buttons">
+                    <a href="https://www.tradingview.com/news/tradingview:998e0e8bf094b:0-spx-s-p-500-extends-weak-start-of-year-with-0-8-loss-on-fed-s-hazy-rate-path-message/#:~:text=Message%20%E2%80%94%20TradingView%20News-,SPX%3A%20S%26P%20500%20Extends%20Weak%20Start%20of%20Year%20with%200.8,Fed's%20Hazy%20Rate%20Path%20Message&text=Equities%20in%20the%20US%20are,rate%20narrative%20takes%20a%20turn." target="_blank" class="projects__link">
+                        <i class="ri-link"></i>View
+                    </a>
+                </div>
+            </article>
+
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img src="assets/images/featured post/post4.jpeg" alt="image" class="projects__img">
+
+                   <!--<a href="#" class="projects__button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>-->
+                </div>
+
+                <div class="project__content">
+                    <h3 class="projects__subtitle">TSLA</h3>
+                    <h2 class="projects__title">TSLA: Tesla Loses Top Spot as World’s Biggest EV Seller</h2>
+
+                    <p class="projects__description">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit.
+                    </p>
+                </div>
+
+                <div class="projects__buttons">
+                    <a href="https://www.tradingview.com/news/tradingview:d48917037094b:0-tsla-tesla-loses-top-spot-as-world-s-biggest-ev-seller-after-byd-hands-over-526k-cars/" target="_blank" class="projects__link">
+                        <i class="ri-link"></i>View
+                    </a>
+                </div>
+            </article>
+
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img src="assets/images/featured post/post5.jpeg" alt="image" class="projects__img">
+
+                    <!--<a href="#" class="projects__button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>-->
+                </div>
+
+                <div class="project__content">
+                    <h3 class="projects__subtitle">GBP/USD</h3>
+                    <h2 class="projects__title">GBP/USD: Sterling Gains for 2nd Day to $1.27</h2>
+
+                    <p class="projects__description">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit.
+                    </p>
+                </div>
+
+                <div class="projects__buttons">
+                    <a href="https://www.tradingview.com/news/tradingview:09c30c01d094b:0-gbp-usd-sterling-gains-for-2nd-day-to-1-27-after-grocery-price-inflation-falls-to-6-7/#:~:text=The%20GBPUSD%20pair%20moved%20higher,prospects%20for%20the%20local%20currency." target="_blank" class="projects__link">
+                        <i class="ri-link"></i>View
+                    </a>
+                </div>
+            </article>
+
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img src="assets/images/featured post/post6.jpeg" alt="image" class="projects__img">
+
+                    <!--<a href="#" class="projects__button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>-->
+                </div>
+
+                <div class="project__content">
+                    <h3 class="projects__subtitle">IXIC   -    META   -    AMZN    -   NVDA</h3>
+                    <h2 class="projects__title">IXIC: Nasdaq Composite Sheds 1.6% as Apple Stock Leads Tech Rout</h2>
+
+                    <p class="projects__description">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit.
+                    </p>
+                </div>
+
+                <div class="projects__buttons">
+                    <a href="https://www.tradingview.com/news/tradingview:454be57ed094b:0-ixic-nasdaq-composite-sheds-1-6-as-apple-stock-leads-tech-rout-after-downgrade/" target="_blank" class="projects__link">
+                        <i class="ri-line-chart-line"></i>View
+                    </a>
+                </div>
+            </article>
+
+             
+           </div>
+        </section>
+
+
+
+        <!--==================== SLIDER ====================-->
+        <section class="slider-container">
+            <div class="slider"> 
+                <div class="slider__content">
+
+                    <h2 class="slider__title">
+                        Recommended Brokers
+                    </h2>
+
+                    <div class="slide-track">    
+                        <div class="slide">
+                            <img src="assets/images/1.png" alt="img">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/2.png" alt="img">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/3.png" alt="img">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/4.png" alt="img">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/5.png" alt="img">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/6.png" alt="img">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/7.png" alt="img">
+                        </div>
+
+
+                        <div class="slide">
+                            <img src="assets/images/1.png" alt="img">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/2.png" alt="img">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/3.png" alt="img">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/4.png" alt="img">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/5.png" alt="img">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/6.png" alt="img">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/7.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <div class="contact__container grid">
+                <div class="contact__data">
+                    <h2 class="section__title-2">
+                        Contact<span> Me</span>
+                    </h2>
+
+                    <p class="contact__description-1">
+                        I will read all emails. Send me any message 
+                        you want and I'll get back on you.  
+                    </p>
+
+                    <p class="contact__description-2">
+                        I'll need your <b>Name</b> and <b>Email Address</b>, but 
+                        you won't recieve anything other than your reply.  
+                    </p>
+                </div>
+
+                <div class="contact__mail">
+                    <h2 class="contact__title">
+                        Send Me A Message
+                    </h2>
+
+
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__group">
+                            <div class="contact__box">
+                                <input type="text" name="user_name" class="contact__input" id="name" required placeholder="Name" >
+                                <label for="name" class="contact__label">First Name</label>
+                            </div>
+
+                            <div class="contact__box">
+                                <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email" >
+                                <label for="email" class="contact__label">Email Address</label>
+                            </div>
+
+                        </div>
+
+                        <div class="contact__box">
+                            <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
+                            <label for="subject" class="contact__label">Subject</label>
+                        </div>
+
+                        <div class="contact__box contact__area">
+                            <textarea name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
+                            <label for="message" class="contact__label">Message</label>
+                        </div>
+
+                        <p class="contact__message" id="contact-message"></p>
+
+                        <button type="submit" class="contact__button button">
+                            <i class="ri-send-plane-line"></i>   Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact__social">
+                    <div class="contact__social-data">
+                        <div>
+                            <p class="contact__social-description-1">
+                                Does not send emails.
+                            </p>
+
+                            <p class="contact__social-description-1">
+                                Write me on my social netwoks
+                            </p>
+                        </div>
+
+                        <div class="contact__social-links">
+                            <a href="https://instagram.com" target="_blank" class="contact__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+
+                            <a href="https://linked.in" target="_blank" class="contact__social-link">
+                                <i class="ri-linkedin-box-line"></i>
+                            </a>
+
+                            <a href="https://github.com/jayjanick/Invest" target="_blank" class="contact__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!----------------------------- FOOTER -------------------------------->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li>
+                    <a href="#home" class="footer__link">Home</a>
+                </li>
+                
+                <li>
+                    <a href="#blog" class="footer__link">Overview</a>
+                </li>
+
+                <li>
+                    <a href="#news" class="footer__link">News</a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; All Rights Reserved By
+                <a href="#">Invest.</a><br>
+                Made by <b>Jay Janick.</b>
+            </span>
+        </div>
+    </footer>
+    
+    <!--====================== SCROLL BAR =======================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+    </a>
+
+
+
+
+
+
+    <!----========================= JS ===========================---->
+
+
+    <!------------------- EMAIL JS -------------------->
+    <script
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+
+    <!----------------- MAIN JS ------------------>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
